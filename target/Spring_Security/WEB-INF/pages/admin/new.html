@@ -15,21 +15,12 @@
     <input type="text" th:field="*{password}" id="password"/>
     <label for="age">Enter age:</label>
     <input type="text" th:field="*{age}" id="age"/>
-    <!--    <label for="role">Role: </label>-->
-    <!--    <select th:field="*{role}" id="role" multiple>-->
-    <!--        <option th:value="USER" selected>USER</option>-->
-    <!--        <option th:value="ADMIN">ADMIN</option>-->
-    <!--    </select>-->
+
     <label for="my_roles[]">Enter roles:</label>
     <select multiple name="my_roles[]" id="my_roles[]">
         <option>ROLE_USER</option>
         <option>ROLE_ADMIN</option>
     </select>
-    <!--    <label for="my_role">Enter role</label>-->
-    <!--    <select name="my_role" id="my_role">-->
-    <!--        <option>ROLE_USER</option>-->
-    <!--        <option>ROLE_ADMIN</option>-->
-    <!--    </select>-->
 
     <br/>
     <input type="submit" value="Create!"/>

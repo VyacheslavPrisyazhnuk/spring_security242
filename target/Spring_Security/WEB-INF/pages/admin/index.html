@@ -27,13 +27,7 @@
         <td th:text="${user.password}"/>
         <td th:text="${user.age}"/>
         <td th:text="${user.getRoles()}"/>
-        <!--                <td th:text="${user.toString()}" />-->
-        <!--                <td>-->
-        <!--            -->
-        <!--                    <tr th:each="role : ${user.getRoles()">-->
-        <!--                        <td>VALUE</td>-->
-        <!--                    </tr>-->
-        <!--                </td>-->
+
     </tr>
     </tbody>
     </thead>
@@ -46,10 +40,6 @@
 <br/>
 <br/>
 <a th:href="@{/logout}">Logout</a>
-<!--    <form name="logoutForm" th:action="@{/logout}" method="post" th:hidden="true">-->
-<!--        <input hidden type="submit" value="Sign Out"/>-->
-<!--    </form>-->
-<!--    &lt;!&ndash;<a href="/logout">Log out</a>&ndash;&gt;-->
 
 </body>
 </html>

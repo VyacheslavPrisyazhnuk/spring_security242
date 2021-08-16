@@ -37,6 +37,13 @@ public class User implements UserDetails {
     @Fetch(FetchMode.JOIN)
     private Set<Role> roles;
 
+    public User(String name, String email, int age, String password) {
+        this.name = name;
+        this.email = email;
+        this.age = age;
+        this.password = password;
+    }
+
     public User() {
     }
 
